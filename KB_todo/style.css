@@ -118,12 +118,6 @@ body {
   transform: translateY(-10px) scale(1.1);
 }
 
-/* 배경 GIF 추가 */
-body {
-  background: url("background.gif") no-repeat center center fixed;
-  background-size: cover;
-}
-
 /* 초기화 버튼 스타일 */
 .reset-btn {
   width: 100%;
