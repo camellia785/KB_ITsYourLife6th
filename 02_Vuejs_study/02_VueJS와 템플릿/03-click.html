@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue 이벤트 디렉티브</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+    <style>
+      .hover-area {
+        background-color: #f0f0f0;
+        padding: 20px;
+        margin: 10px 0;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h2>이벤트 디렉티브 예제</h2>
+      <p>버튼을 클릭하면 숫자가 증가합니다.</p>
+      <!-- 
+       * v-on:click
+       * - @click="increaseCount"는 버튼 클릭 시 increaseCount 메서드를 호출
+       * - Vue에서 이벤트 핸들링을 위해 v-on: 대신 @ 기호를 사용하는 단축 문법 제공
+       -->
+      <button v-on:click="increaseCount()">클릭하세요 (축약 안한 버전)</button>
+      <button @click="increaseCount">클릭하세요</button>
+
+      <p>카운트: {{ count }}</p>
+
+      <!-- 
+       * v-on:mouseover
+       * - @mouseover="decreaseCount"는 마우스를 올렸을 때 decreaseCount 메서드를 호출
+       * - 마찬가지로 v-on: 대신 @ 기호를 사용한 단축 문법 사용 가능
+       -->
+      <div class="hover-area" @mouseover="decreaseCount">
+        이 영역에 마우스를 올리면 숫자가 감소합니다.
+      </div>
+    </div>
+
+    <script>
+      const { createApp, ref } = Vue;
+
+      createApp({
+        setup() {
+          const count = ref(0);
+
+          const increaseCount = () => {
+            count.value++;
+          };
+
+          const decreaseCount = () => {
+            count.value--;
+          };
+
+          return {
+            count,
+            increaseCount,
+            decreaseCount,
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>
