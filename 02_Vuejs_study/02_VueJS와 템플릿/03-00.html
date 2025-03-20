@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>컴포지션 API, 옵션 API</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>컴포지션 API VS 옵션 API</h1>
+      <div>
+        <h2>메시지 : {{message}}</h2>
+        <p>현재 시간:{{currentTime}}</p>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="text/javascript">
+      /* (2) 옵션 API방식
+      - data()함수에서 반환하는 객체의 속성으로 상태 정의
+      - this를 통해 상태에 접근 (this.currentTime처럼)
+      */
+
+      Vue.createApp({
+        data() {
+          return {
+            message: "안녕하세요 Vue!",
+            currentTime: new Date().toLocaleTimeString(),
+          };
+        },
+        mounted() {
+          setInterval(() => {
+            this.currentTime = new Date().toLocaleTimeString();
+          });
+        },
+      }).mount("#app");
+
+      /*
+              (1) 컴포지션 API
+              - 반응형 상태를 ref() 함수를 통해 생성
+              - 값을 변경할때 .value 속성을 사용
+              */
+
+      /*
+            const { createApp, ref, onMounted } = Vue;
+
+            const app = createApp({
+              setup() {
+                const message = ref("Hello Vue!");
+                const currentTime = ref(new Date().toLocaleTimeString());
+
+                onMounted(() => {
+                  setInterval(() => {
+                    currentTime.value = new Date().toLocaleTimeString();
+                  }, 1000);
+                });
+
+                return {
+                  message,
+                  currentTime,
+                };
+              },
+            });
+            */
+
+      const vm = app.mount("#app");
+    </script>
+  </body>
+</html>

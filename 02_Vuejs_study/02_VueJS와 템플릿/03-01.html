@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>파일명</title>
+  </head>
+  <body>
+    <div id="app">{{ message }}</div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="text/javascript">
+      const { createApp, ref } = Vue;
+
+      /*
+    1. Vue 어플리케이션을 생성
+    2. setup함수를 통해서 반응형 상태를 생성
+    3. 생성된 반응형 데이터를 템플릿에 바인딩
+    
+
+    가상돔
+    1. mount함수를 통해 앱을 마운트(올린다)한다 -> 최초의 가상 DOM 생성
+    2. Vue가 기존 가상돔과 비교해서 새로운 가상DOM을 만들고 -> 실제 DOM에 반영
+    3. 데이터 (ref)가 변경됨 -> 새로운 가상 DOM생성
+    4. Vue의 Diffing 알고리즘이 변경된 부분 감지 -> 변경된 부분만 실제 DOM에 적용
+    5. 브라우저가 실제 DOM을 화면에 업데이트 -> 렌더링
+    */
+
+      const app = createApp({
+        //setup() {}
+        // 컴포넌트가 초기화될때 한번만 실행됨
+        // 컴포넌트의 상태와 로직을 정의
+
+        setup() {
+          // ref: 반응형 상태를 생성하는 함수
+          const message = ref("Hello Vue3!");
+
+          setTimeout(() => {
+            message.value = "Updated Vue!";
+          }, 2000);
+
+          // 반응형 객체
+          // -> 객체의 변화를 감지하고, 그에 따라 자동으로 화면을 업데이트하는 특별객체
+          return {
+            message,
+          };
+        },
+      });
+
+      const vm = app.mount("#app");
+    </script>
+  </body>
+</html>
