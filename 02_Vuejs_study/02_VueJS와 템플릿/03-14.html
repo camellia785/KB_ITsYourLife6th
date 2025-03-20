@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>파일명</title>
+  </head>
+  <body>
+    <div id="app">
+      <table>
+        <thead>
+          <th>번호</th>
+          <th>이름</th>
+          <th>전화번호</th>
+        </thead>
+        <tbody>
+          <!-- 
+            v-for 디렉티브를 사용한 렌더링
+            - 배열이나 객체의 각 항목에 대해 요소를 반복 설정
+            - :key 속성을 통해 각 항목에 고유한 식별자 부여(Vue의 가상 Dom 최적화)
+             -->
+
+          <tr v-for="(contact, index) in contracts" :key="">
+            <td>{{index+1}}</td>
+            <td>{{contact.name}}</td>
+            <td>{{contact.tel}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="text/javascript">
+      const { createApp, ref } = Vue;
+
+      const app = createApp({
+        setup() {
+          const contracts = ref([
+            { no: 1011, name: "RM", tel: "010-3456-8299" },
+            { no: 1012, name: "정국", tel: "010-3456-8298" },
+            { no: 1013, name: "제이홉", tel: "010-3456-8297" },
+            { no: 1014, name: "슈가", tel: "010-3456-8296" },
+          ]);
+
+          return {
+            contracts,
+          };
+        },
+      });
+
+      const vm = app.mount("#app");
+    </script>
+  </body>
+</html>
