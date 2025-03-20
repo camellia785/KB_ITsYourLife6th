@@ -9,8 +9,9 @@
     <div id="app">
       <!-- 
         1. .lazy
-        -> change 이벤트 발생 시에만 데이터 업데이트를 함
+        -> change 이벤트 발생 시에만(엔터) 데이터 업데이트를 함
         2. .number
+        -> 사용자 입력을 자동으로 숫자로 형변환 해줌, 숫자로 변환
         3. .trim
         -> 입력값의 앞뒤공백제거
        -->
@@ -18,6 +19,8 @@
         <h4>lazy 수식어</h4>
         lazy Test: <input type="text" v-model.lazy="lazyTest" />
         <br />
+        <!-- readonly: 속성은 입력 필드를 "읽기 전용"으로 만드는 HTML 속성 -->
+
         입력된 값: <input type="text" v-bind:value="lazyTest" readonly />
       </div>
 

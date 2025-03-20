@@ -7,13 +7,14 @@
   </head>
   <body>
     <div id="app">
-      <h3>v-model이용시 한글 처리 문제점</h3>
+      <h3>v-model 이용시 한글 처리 문제점</h3>
       <input type="text" v-model="name" />
       <br />
       입력한 값:
       <span> {{name}} </span>
 
-      <h3>v-bind + 이벤트 핸들러 사용(문제해결!)</h3>
+      <h3>v-bind + @이벤트 핸들러 사용(문제해결!)</h3>
+      <!-- @는 Vue에서 v-on: 디렉티브의 단축 문법 -->
       <input type="text" v-model="name2" @input="changeName" />
       <br />
       입력한 값:
@@ -28,6 +29,8 @@
           const name = ref("");
           const name2 = ref("");
 
+          // e.target: 이벤트가 발생한 실제 요소(HTML 태그)
+          // e.target.value는 사용자가 입력한 값을 실시간으로 가져오는 데 필요
           const changeName = (e) => {
             name2.value = e.target.value;
           };
