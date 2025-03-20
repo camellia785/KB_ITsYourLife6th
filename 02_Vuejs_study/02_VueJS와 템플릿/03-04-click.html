@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>파일명</title>
+  </head>
+  <body>
+    <div id="app">
+      <h3>v-model이용시 한글 처리 문제점</h3>
+      <input type="text" v-model="name" />
+      <br />
+      입력한 값:
+      <span> {{name}} </span>
+
+      <h3>v-bind + 이벤트 핸들러 사용(문제해결!)</h3>
+      <input type="text" v-model="name2" @input="changeName" />
+      <br />
+      입력한 값:
+      <span> {{name2}} </span>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="text/javascript">
+      const { createApp, ref } = Vue;
+
+      const app = createApp({
+        setup() {
+          const name = ref("");
+          const name2 = ref("");
+
+          const changeName = (e) => {
+            name2.value = e.target.value;
+          };
+
+          return {
+            name,
+            name2,
+            changeName,
+          };
+        },
+      });
+
+      const vm = app.mount("#app");
+    </script>
+  </body>
+</html>

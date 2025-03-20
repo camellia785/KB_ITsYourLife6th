@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>파일명</title>
+    <style>
+      .title-text {
+        font-size: 0px;
+      }
+    </style>
   </head>
   <!-- 
        * v-bind 디렉티브
@@ -22,6 +27,8 @@
       <br />
       <!-- <img v-bind:src="imagePath" /> -->
       <img :src="imagePath" />
+
+      <h1 v-bind="{style: h1Style, class: h1Class}">안녕하세요</h1>
     </div>
 
     <div id="app">{{ message }}</div>
@@ -36,9 +43,10 @@
             "https://contactsvc.bmaster.kro.kr/photos/18.jpg"
           );
 
+          const h1Class = ref("title - text");
           const h1Style = ref({
             color: "blue",
-            fontsize: "24px",
+            fontSize: "10px",
             fontWeight: "bold",
             textDecoration: "underline",
           });
@@ -46,6 +54,8 @@
           return {
             message,
             imagePath,
+            h1Style,
+            h1Class,
           };
         },
       });

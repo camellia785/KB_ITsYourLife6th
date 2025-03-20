@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>파일명</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- 
+       * v-model 디렉티브
+       *    - 폼 입력 요소와 Vue의 데이터를 양방향으로 바인딩해주는 디렉티브
+       *    - 사용자 입력에 따라 데이터가 자동으로 업데이트되고, 데이터 변경 시 입력 요소도 업데이트됨
+       * 
+       * 사용법:
+       *   - 기본 형식: v-model="데이터"
+       * 
+       * 주요 사용 사례:
+       *    - 텍스트 입력: <input type="text" v-model="메시지변수">
+       *    - 체크박스: <input type="checkbox" v-model="체크상태변수">
+       *    - 라디오 버튼: <input type="radio" v-model="선택변수">
+       *    - 셀렉트 박스: <select v-model="선택변수">
+       *    - 텍스트 영역: <textarea v-model="내용변수"></textarea>
+       -->
+      <input type="text" v-model="name" />
+      <br />
+      입력한 값:
+      <span> {{name}} </span>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="text/javascript">
+      const { createApp, ref } = Vue;
+
+      const app = createApp({
+        setup() {
+          const name = ref("");
+
+          return {
+            name,
+          };
+        },
+      });
+
+      const vm = app.mount("#app");
+    </script>
+  </body>
+</html>
