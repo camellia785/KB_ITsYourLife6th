@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue 로딩 스피너 예제</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <style>
+      /* v-cloak 처리 */
+      [v-cloak] {
+        display: none;
+      }
+
+      .spinner {
+        width: 50px;
+        height: 50px;
+        border: 6px solid #ccc;
+        border-top: 6px solid #42b983;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 100px auto;
+      }
+      /* 
+       * @keyframes 애니메이션 정의
+       * spin: 애니메이션의 이름
+       * CSS 애니메이션을 정의하는 규칙으로, 시간에 따른 스타일 변화를 지정합니다.
+       * 
+       * 이 애니메이션은 로딩 스피너의 회전 효과를 만듭니다:
+       * - 0% (시작점): 회전 각도 0도에서 시작
+       * - 100% (종료점): 회전 각도 360도로 완전히 한 바퀴 회전
+       * 
+       * 이 애니메이션은 .spinner 클래스에 적용되어 있으며,
+       * animation: spin 1s linear infinite; 속성을 통해
+       * 1초 동안 일정한 속도로 무한 반복됩니다.
+       */
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      body {
+        font-family: sans-serif;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div v-if="loading" class="spinner"></div>
+
+      <div v-else v-cloak>
+        <h1>{{ message }}</h1>
+      </div>
+    </div>
+
+    <script>
+      const { createApp } = Vue;
+
+      createApp({
+        data() {
+          return {
+            message: "Vue 앱이 로딩되었습니다! 🎉",
+            loading: true,
+          };
+        },
+        mounted() {
+          setTimeout(() => {
+            this.loading = false;
+          }, 2000);
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

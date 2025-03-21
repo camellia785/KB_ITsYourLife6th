@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>파일명</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- 
+        v-for object
+        (value, key, index) in object
+        value: 객체의 속성 값
+        key: 객체의 키(속성이름)
+        index: 인덱스 -> 객체 자체에는 인덱스가 없지만, vue에서 인덱스를 부여
+        -->
+      <ul>
+        <li v-for="(value, key, index) in user">
+          {{index}} => {{key}} : {{value}}
+        </li>
+      </ul>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="text/javascript">
+      const { createApp, reactive } = Vue;
+
+      const app = createApp({
+        setup() {
+          const user = reactive({
+            name: "영희",
+            age: 23,
+            city: "서울",
+          });
+
+          return {
+            user,
+          };
+        },
+      });
+
+      const vm = app.mount("#app");
+    </script>
+  </body>
+</html>
