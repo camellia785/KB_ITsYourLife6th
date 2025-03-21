@@ -1,11 +1,13 @@
 # KB IT's Your Life 6기 과제 저장소 🚀
 
-![image](https://github.com/user-attachments/assets/5d46af5b-b267-4745-bb1d-83605a85589d)
+
 
 
 **KB국민은행 "IT’s Your Life" 6기** 부트캠프 과제 및 프로젝트 저장소  
 - 📅 **2025.03.04 ~ 2025.08.21 (6개월)**  
-- 💡 **풀스택 개발자 과정** 학습 및 프로젝트 진행  
+- 💡 **풀스택 개발자 과정** 학습 및 프로젝트 진행
+
+<img src="https://github.com/user-attachments/assets/5d46af5b-b267-4745-bb1d-83605a85589d" width="500">
 
 <br>
 
