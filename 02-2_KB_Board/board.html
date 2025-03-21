@@ -11,7 +11,23 @@
 
       <!-- 여기에 게시글 목록을 표시하는 코드를 작성하세요 -->
 
+      <ul>
+        <li
+          v-for="post in posts"
+          :key="post.no"
+          class="post-item"
+          @click="selectPost(post)"
+        >
+          {{post.title}}
+        </li>
+      </ul>
+
       <!-- 선택한 게시글의 내용을 표시하는 부분을 작성하세요 -->
+      <div v-if="selectedPost" class="post-content">
+        <h2>{{selectedPost.title}}</h2>
+        <p>{{selectedPost.content}}</p>
+        <button @click="closePost">닫기</button>
+      </div>
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -84,17 +100,20 @@
             },
           ]);
 
+          // selectedPost: 사용자가 선택한 게시글을 저장하는 상태
           // 선택한 게시글 초기화
           const selectedPost = ref(null);
 
           // 게시글 선택 함수 (클릭 시 실행)
           const selectPost = (post) => {
-            // 클릭 시 선택한 게시글을 설정하는 코드를 작성하세요
+            // 클릭 시 선택한 게시글을 설정
+            selectedPost.value = post;
           };
 
-          // 게시글 닫기 함수
+          // 게시글 닫기 함수 -> selectedPost를 null로 만드는 함수
           const closePost = () => {
             // 게시글 닫기 기능을 작성하세요
+            selectedPost.value = null;
           };
 
           return {
@@ -146,3 +165,11 @@
     </style>
   </body>
 </html>
+
+<!-- 게시판 기능 정리
+ 1. 게시판 목록 보여줌
+ 2. 특정 게시글을 클릭하면, 내용을 표시하는 기초적 구조
+ 3. ref()를 이용하여 게시글 목록을 반응형 상태로 만듦
+ 4. 게시글을 클릭하면 selectedPost에 해당 게시글을 저장
+ 5. 게시글 닫기 버튼을 누르면 selectedPost를 null로 변경
+ -->
