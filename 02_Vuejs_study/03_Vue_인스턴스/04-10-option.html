@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue CDN Starter</title>
+  </head>
+  <body>
+    <div id="app">
+      1보다 큰 수: <input type="text" v-model.number="num" /> <br />
+      1부터 입력한 값까지의 합: <span>{{sum}}</span><br />
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script>
+      const { createApp } = Vue;
+
+      let vm = createApp({
+        name: "App",
+        data() {
+          return {
+            num: 0,
+          };
+        },
+        computed: {
+          sum() {
+            let n = parseInt(this.num);
+            if (Number.isNaN(n)) return 0;
+            return (n * (n + 1)) / 2;
+          },
+        },
+        created() {
+          console.log("🌸 created");
+        },
+        mounted() {
+          console.log("🐋 mounted");
+        },
+        updated() {
+          console.log("🐻 updated");
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

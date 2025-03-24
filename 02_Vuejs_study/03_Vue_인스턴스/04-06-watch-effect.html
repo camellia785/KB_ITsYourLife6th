@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>파일명</title>
+  </head>
+  <body>
+    <div id="app">
+      x : <input type="text" v-model.number="x" /><br />
+      y : <input type="text" v-model.number="y" /><br />
+      덧셈 결과 : {{sum}}
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="text/javascript">
+      const { createApp, ref, watch, watchEffect } = Vue;
+
+      const app = createApp({
+        setup() {
+          const x = ref(0);
+          const y = ref(0);
+          const sum = ref(0);
+
+          // 기본문법 : watchEffect(callback())
+          // callback : 반응형 데이터가 변경될때 실행될 함수
+          // callback 내부에서 사용된 모든 반응형 데이터가 자동으로 추적됨
+          watchEffect(() => {
+            console.log(`x : ${x.value}로 변경됨!`);
+            console.log(`y : ${y.value}로 변경됨!`);
+          });
+
+          // watch(y, (current, old) => {
+          //   console.log(`y : ${old} --> ${current}`);
+          // });
+          return {
+            x,
+            y,
+            sum,
+          };
+        },
+      });
+
+      const vm = app.mount("#app");
+    </script>
+  </body>
+</html>

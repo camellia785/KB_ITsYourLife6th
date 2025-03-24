@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>파일명</title>
+  </head>
+  <body>
+    <div id="app">
+      <input type="text" v-model="name" placeholder="이름을 입력하세요" />
+      <br />
+      <input type="text" v-model="user.age" placeholder="나이를 입력하세요" />
+      <br />
+      <input
+        type="text"
+        v-model="user.email"
+        placeholder="이메일을 입력하세요"
+      />
+      <br />
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="text/javascript">
+      const { createApp, ref, reactive, watch } = Vue;
+
+      const app = createApp({
+        setup() {
+          const name = ref("");
+          const user = reactive({
+            age: 0,
+            email: "",
+          });
+
+          watch(name, (newVal, oldVal) => {
+            console.log(`이름이 ${oldVal}에서 ${newVal}로 변경됨`);
+          });
+
+          watch(
+            () => ({ ...user }),
+            (newVal, oldVal) => {
+              // watch.는 첫번째 인자로 감시하고싶은 데이터의 getter 함수를 받는다.
+              // reactive객체를 직접 감시할 경우 newVal, oldVal 동일한 Proxy 객체를 참조
+              // 따라서 이전값과의 비교를하려면 객체를 복사해야함.
+              console.log(`사용자 정보가 변경됨 ${oldVal.age} 에서`);
+              console.log(`사용자 정보가 변경됨 ${newVal.age}`);
+            },
+
+            // 중첩된 객체의 변경도 감지
+            { deep: true }
+          );
+
+          return {
+            name,
+            user,
+          };
+        },
+      });
+
+      const vm = app.mount("#app");
+    </script>
+  </body>
+</html>

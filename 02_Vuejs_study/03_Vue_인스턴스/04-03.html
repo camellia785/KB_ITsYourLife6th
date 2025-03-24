@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>파일명</title>
+  </head>
+  <body>
+    <div id="app">
+      1보다 큰수: <input type="text" v-model="num" /> <br />
+      1부터 입력한 값까지의 합 : <span>{{sum}}</span> <br />
+      1부터 입력한 값까지의 합 : <span>{{sum}}</span> <br />
+      1부터 입력한 값까지의 합 : <span>{{sum}}</span> <br />
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="text/javascript">
+      const { createApp, ref, computed } = Vue;
+
+      const app = createApp({
+        setup() {
+          const num = ref(0);
+          const sum = computed(() => {
+            console.log("sum 호출됨!");
+
+            let n = parseInt(num.value);
+            if (Number.isNaN(n)) return 0;
+            return (n * (n + 1)) / 2;
+          });
+          return {
+            num,
+            sum,
+          };
+        },
+      });
+
+      const vm = app.mount("#app");
+    </script>
+  </body>
+</html>

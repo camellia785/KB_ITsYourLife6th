@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>파일명</title>
+  </head>
+  <body>
+    <div id="app">
+      금액: <input type="text" v-model="amount" />
+      <button v-on:click="deposit">입금</button>
+      <button v-on:click="withdraw">인출</button>
+      <br />
+      <h3>계좌 잔고 : {{balance}}</h3>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="text/javascript">
+      const { createApp, ref } = Vue;
+
+      const app = createApp({
+        setup() {
+          const amount = ref(0);
+          const balance = ref(0);
+
+          const deposit = () => {
+            console.log("입금");
+            balance.value += amount.value;
+          };
+
+          const withdraw = () => {
+            console.log("출금");
+            balance.value -= amount.value;
+          };
+
+          // 한글을 입력받으면, 안되도록! 하는 코드 (경고)
+
+          return {
+            balance,
+            amount,
+            deposit,
+            withdraw,
+          };
+        },
+      });
+
+      const vm = app.mount("#app");
+    </script>
+  </body>
+</html>
