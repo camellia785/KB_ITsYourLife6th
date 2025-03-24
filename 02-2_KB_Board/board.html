@@ -8,6 +8,15 @@
   <body>
     <div id="app">
       <h1>📌 게시판 목록</h1>
+
+      <div class="search-container">
+        <input
+          type="text"
+          v-model="selectQuery"
+          placeholder="검색어를 입력하세요"
+        />
+      </div>
+
       <div class="sort-buttons">
         <button @click="sortPosts('asc')">오름차순</button>
         <button @click="sortPosts('desc')">내림차순</button>
@@ -16,7 +25,7 @@
       <!-- 게시글 목록 표시 -->
       <ul>
         <li
-          v-for="post in posts"
+          v-for="post in filteredPosts"
           :key="post.no"
           class="post-item"
           @click="selectPost(post)"
@@ -35,7 +44,7 @@
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script>
-      const { createApp, ref } = Vue;
+      const { createApp, ref, computed } = Vue;
 
       createApp({
         setup() {
@@ -101,6 +110,13 @@
               content:
                 "Git은 버전 관리 시스템이며, GitHub는 이를 활용한 원격 저장소 플랫폼입니다.",
             },
+            ...Array.from({ length: 3000 }, (_, i) => ({
+              no: i + 11,
+              title: `게시글 제목 ${i + 11}`,
+              content: `게시글 ${
+                i + 11
+              }의 내용입니다. 이 글은 자동으로 생성된 내용입니다.`,
+            })),
           ]);
 
           // selectedPost: 사용자가 선택한 게시글을 저장하는 상태
@@ -117,7 +133,7 @@
             selectedPost.value = null;
           };
 
-          //정렬기능
+          //+ 정렬기능
           const sortPosts = (order) => {
             if (order === "asc") {
               console.log("오름차순");
@@ -135,12 +151,36 @@
             }
           };
 
+          //+ 검색기능
+          const selectQuery = ref("");
+          const filteredPosts = computed(() => {
+            console.log("검색기능 호출됨");
+
+            // (1)검색어가 없으면 전체 value값이 다 보여지도록
+            if (!selectQuery.value) {
+              return posts.value;
+            }
+
+            const query = selectQuery.value.toLowerCase();
+
+            // (2) filter :
+            // 배열의 각 요소에 대해 주어진 조건을 만족하는 요소만 모아 새 배열을 반환함.
+            return posts.value.filter((post) => {
+              return (
+                post.title.toLowerCase().includes(query) ||
+                post.content.toLowerCase().includes(query)
+              );
+            });
+          });
+
           return {
             posts,
             selectedPost,
             selectPost,
             closePost,
             sortPosts,
+            selectQuery,
+            filteredPosts,
           };
         },
       }).mount("#app");
@@ -187,6 +227,11 @@
         display: flex;
         justify-content: center;
         gap: 10px;
+      }
+
+      .search-container {
+        display: flex;
+        justify-content: center;
       }
     </style>
   </body>
