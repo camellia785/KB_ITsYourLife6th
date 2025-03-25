@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>파일명</title>
+  </head>
+  <body>
+    <div id="app">
+      <div
+        @contextmenu="ctxStop"
+        style="position: absolute; left: 5px; top: 5px; right: 5px; bottom: 5px"
+      >
+        <a href="https://facebook.com">페이스북</a>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="text/javascript">
+      const { createApp, ref } = Vue;
+
+      const app = createApp({
+        setup() {
+          const message = ref("Hello Vue!");
+
+          const ctxStop = (e) => {
+            // e.preventDefault();
+            console.log(e);
+
+            // e.target: 이벤트가 발생한 요소
+            console.log(e.target);
+
+            // e.currentTarget: 이벤트 리스너가 부착된 요소
+            console.log(e.target.tagName);
+
+            console.log(e.composedPath().map((el) => el.tagName));
+
+            // e.preventDefault() -> 기본 동작을 방지
+            console.log("우클리깅 금지되었습니다.");
+          };
+
+          const childEvent = (e) => {
+            console.log("자식요소에서 이벤트 발생.");
+          };
+
+          return {
+            message,
+            ctxStop,
+            childEvent,
+          };
+        },
+      });
+
+      const vm = app.mount("#app");
+    </script>
+  </body>
+</html>

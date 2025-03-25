@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SessionStorage 메모 예제</title>
+    <style></style>
+  </head>
+  <body>
+    <h2>📝 SessionStorage 메모장</h2>
+
+    <textarea id="memo" placeholder="여기에 메모를 입력하세요..."></textarea
+    ><br />
+
+    <button onclick="saveMemo()">저장</button>
+    <button onclick="loadMemo()">불러오기</button>
+    <button onclick="clearMemo()">삭제</button>
+
+    <script>
+      const memoBox = document.getElementById("memo");
+
+      // 나갔다 들어오면 없어져있긴 함
+      function saveMemo() {
+        const text = memoBox.value;
+        sessionStorage.setItem("sessionMemo", text);
+        alert("메모가 세션에 저장되었습니다.");
+      }
+
+      function loadMemo() {
+        const saved = sessionStorage.getItem("sessionMemo");
+        memoBox.value = saved || "";
+      }
+
+      function clearMemo() {
+        sessionStorage.removeItem("sessionMemo");
+        memoBox.value = "";
+        alert("메모가 삭제되었습니다.");
+      }
+
+      // 페이지가 로드될 때 자동으로 불러오기
+      window.addEventListener("DOMContentLoaded", loadMemo);
+    </script>
+  </body>
+</html>

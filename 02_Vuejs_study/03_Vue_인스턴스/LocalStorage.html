@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>LocalStorage 예제</title>
+  </head>
+  <body>
+    <h2>👤 사용자 이름 저장 (LocalStorage)</h2>
+    <input type="text" id="username" placeholder="이름 입력" />
+    <button onclick="saveName()">저장</button>
+    <button onclick="loadName()">불러오기</button>
+    <button onclick="clearName()">삭제</button>
+
+    <p id="result"></p>
+
+    <script>
+      function saveName() {
+        const name = document.getElementById("username").value;
+        localStorage.setItem("username", name);
+        alert("이름이 저장되었습니다!");
+      }
+
+      function loadName() {
+        const name = localStorage.getItem("username");
+        document.getElementById("result").textContent = name
+          ? `저장된 이름: ${name}`
+          : "저장된 이름이 없습니다.";
+      }
+
+      function clearName() {
+        localStorage.removeItem("username");
+        document.getElementById("result").textContent = "";
+        alert("이름이 삭제되었습니다.");
+      }
+    </script>
+  </body>
+</html>
