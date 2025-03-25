@@ -27,11 +27,13 @@
           watchEffect(() => {
             console.log(`x : ${x.value}로 변경됨!`);
             console.log(`y : ${y.value}로 변경됨!`);
+            sum.value = x.value + y.value;
           });
 
           // watch(y, (current, old) => {
           //   console.log(`y : ${old} --> ${current}`);
           // });
+
           return {
             x,
             y,

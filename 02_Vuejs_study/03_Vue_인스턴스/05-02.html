@@ -7,7 +7,11 @@
   </head>
   <body>
     <div id="app">
-      금액: <input type="text" v-model="amount" />
+      <!-- sol0. @input="validateInput" : 한글입력방지 기능 -->
+      <!-- sol1. v-model.number로 입력된 값을 자동으로 숫자로 변환 -->
+      <!-- sol2. const deposit 안에 balance.value += parseInt(amount.value) || 0; 넣기-->
+
+      금액: <input type="text" v-model.number="amount" @input="validateInput" />
       <button v-on:click="deposit">입금</button>
       <button v-on:click="withdraw">인출</button>
       <br />
@@ -24,12 +28,16 @@
 
           const deposit = () => {
             console.log("입금");
-            balance.value += amount.value;
+
+            // sol2
+            balance.value += parseInt(amount.value) || 0;
           };
 
           const withdraw = () => {
             console.log("출금");
-            balance.value -= amount.value;
+
+            // sol2
+            balance.value -= parseInt(amount.value) || 0;
           };
 
           // 한글을 입력받으면, 안되도록! 하는 코드 (경고)
