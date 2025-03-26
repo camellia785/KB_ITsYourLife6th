@@ -4,24 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   </head>
-
   <body>
-    <div id="app" class="container">
+    <div class="container">
       <h1>Bootstrap Table</h1>
+
+      <!-- ✅ 정적인 테이블 데이터 -->
       <table class="table table-striped">
         <thead>
           <th style="width: 50px">No</th>
@@ -29,70 +29,55 @@
           <th style="width: 150px">작성자</th>
           <th style="width: 150px">등록일</th>
         </thead>
+
         <tbody>
-          <tr v-for="(post, index) in posts" :key="post.id">
-            <td>{{ post.id }}</td>
-            <td><a href="#">{{ post.title }}</a></td>
-            <td>{{ post.author }}</td>
-            <td>{{ post.date }}</td>
+          <tr>
+            <td>1</td>
+            <td><a href="#">글제목1</a></td>
+            <td>user01</td>
+            <td>2024-05-16</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><a href="#">글제목2</a></td>
+            <td>user02</td>
+            <td>2024-05-16</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><a href="#">글제목3</a></td>
+            <td>user03</td>
+            <td>2024-05-16</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><a href="#">글제목4</a></td>
+            <td>user04</td>
+            <td>2024-05-16</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><a href="#">글제목5</a></td>
+            <td>user05</td>
+            <td>2024-05-16</td>
           </tr>
         </tbody>
       </table>
       <h1 class="mt-5"><i class="fa-solid fa-house"></i> Fontawesome 테스트</h1>
       <div>
-        <button
-          v-for="button in buttons"
-          :key="button.text"
-          :class="button.class"
-          class="me-2 mb-2"
-        >
-          <i :class="button.icon"></i> {{ button.text }}
+        <button class="btn btn-primary">
+          <i class="fa-solid fa-envelope"></i> email
+        </button>
+        <button class="btn btn-success">
+          <i class="fa-solid fa-right-to-bracket"></i> login
+        </button>
+        <button class="btn btn-warning">
+          <i class="fa-solid fa-lock"></i> 비밀번호
+        </button>
+        <button class="btn btn-danger">
+          <i class="fa-solid fa-trash"></i> 삭제
         </button>
       </div>
     </div>
-
-    <script>
-      const { createApp, ref } = Vue;
-
-      createApp({
-        setup() {
-          const posts = ref([
-            { id: 1, title: "글제목1", author: "user01", date: "2024-05-16" },
-            { id: 2, title: "글제목2", author: "user02", date: "2024-05-16" },
-            { id: 3, title: "글제목3", author: "user03", date: "2024-05-16" },
-            { id: 4, title: "글제목4", author: "user04", date: "2024-05-16" },
-            { id: 5, title: "글제목5", author: "user05", date: "2024-05-16" },
-          ]);
-
-          const buttons = ref([
-            {
-              text: "email",
-              icon: "fa-solid fa-envelope",
-              class: "btn btn-primary",
-            },
-            {
-              text: "login",
-              icon: "fa-solid fa-right-to-bracket",
-              class: "btn btn-success",
-            },
-            {
-              text: "비밀번호",
-              icon: "fa-solid fa-lock",
-              class: "btn btn-warning",
-            },
-            {
-              text: "삭제",
-              icon: "fa-solid fa-trash",
-              class: "btn btn-danger",
-            },
-          ]);
-
-          return {
-            posts,
-            buttons,
-          };
-        },
-      }).mount("#app");
-    </script>
   </body>
 </html>
