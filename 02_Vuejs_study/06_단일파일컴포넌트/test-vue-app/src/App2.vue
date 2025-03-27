@@ -11,7 +11,7 @@ const idols = ref([
 </script>
 
 <template>
-  <h1>App 컴포넌</h1>
+  <h1>App 컴포넌트</h1>
   <hr />
   <CheckboxItem v-for="idol in idols" :key="idol.id" :idol="idol" />
 </template>

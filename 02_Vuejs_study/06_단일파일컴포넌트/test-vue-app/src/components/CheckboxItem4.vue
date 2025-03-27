@@ -1,8 +1,5 @@
 <script setup>
 
-
-
-
 //  validator
 // Vue 공식 기능
 // 부모가 prop를 전달,함수 호출
