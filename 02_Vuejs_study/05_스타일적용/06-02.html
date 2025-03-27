@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue CDN Starter</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- 
+      .stop 메서드는 이벤트 전파를 중단시키는 역할
+      button 요소에서 발생한 이벤트가 부모 요소(div)로 전파되지 않도록 막음
+      -->
+      <div @mouseover="parentOverEvent" @mouseout="parentOutEvent">
+        <button
+          :style="style1"
+          @mouseover.stop="overEvent"
+          @mouseout.stop="outEvent"
+        >
+          테스트
+        </button>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script>
+      // 구조 분해 할당으로 가져옴
+      const { createApp, reactive } = Vue;
+
+      // Vue 애플리케이션 생성
+      let vm = createApp({
+        name: "App",
+        setup() {
+          // 여러값을 한번에 객체형태로 전달하고 싶을때는? reactive 사용
+          const style1 = reactive({
+            backgroundColor: "aqua",
+            color: "black",
+          });
+
+          const overEvent = () => {
+            console.log("🌸 overEvent");
+
+            style1.backgroundColor = "purple";
+            style1.color = "yellow";
+          };
+
+          const outEvent = () => {
+            console.log("🌸 outEvent");
+
+            style1.backgroundColor = "aqua";
+            style1.color = "black";
+          };
+
+          const parentOverEvent = () => {
+            console.log("🌸 parentOverEvent");
+          };
+
+          const parentOutEvent = () => {
+            console.log("🌸 parentOutEvent");
+          };
+
+          return {
+            style1,
+            overEvent,
+            outEvent,
+            parentOverEvent,
+            parentOutEvent,
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue CDN Starter</title>
+    <style>
+      .buttonColor {
+        background-color: aqua;
+        color: black;
+      }
+      .buttonLayout {
+        text-align: center;
+        width: 120px;
+      }
+      .staticBorder {
+        border: khaki dashed 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <!-- 
+      - class-staticBorder: 항상 적용되는 고정된 스타일
+      - :class='mycolor': vue의 반응형 데이터로 동적으로 클래스를 설정 -->
+      <button class="staticBorder" :class="myColor">테스트 버튼</button>
+    </div>
+
+    <!-- Vue 3 스크립트 부분 -->
+    <script src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      const { createApp, ref } = Vue;
+
+      const vm = createApp({
+        name: "App",
+        setup() {
+          // 버튼의 클래스 값을 저장하는 반응형변수, CSS 클래스 2개가 적용되도록 함
+          const myColor = ref("buttonColor buttonLayout");
+
+          return {
+            myColor,
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue CDN Starter</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- :style로 동적으로 스타일 적용
+         - backgroundColor와 color변수를 직접 사용 -->
+      <button
+        :style="{backgroundColor, color}"
+        @mouseover.stop="overEvent"
+        @mouseout.stop="outEvent"
+      >
+        테스트
+      </button>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script>
+      // vue3의 createApp ref 함수 가져오기
+      const { createApp, ref } = Vue;
+
+      // vue 애플리케이션 생성
+      let vm = createApp({
+        name: "App",
+        setup() {
+          // ref()로 반응형 변수 생성
+          const backgroundColor = ref("aqua");
+          const color = ref("black");
+
+          // 마우스 올릴 때 실행되는 함수
+          const overEvent = () => {
+            backgroundColor.value = "purple";
+            color.value = "yellow";
+          };
+
+          // 마우스 뗄 때 실행되는 함수
+          const outEvent = () => {
+            backgroundColor.value = "aqua";
+            color.value = "black";
+          };
+
+          // setup()에서 사용할 데이터와 메서드 반환
+          return {
+            backgroundColor,
+            color,
+            overEvent,
+            outEvent,
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

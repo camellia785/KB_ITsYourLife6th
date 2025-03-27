@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue CDN Starter</title>
+  </head>
+  <body>
+    <div id="app">
+      <button :style="[myColor, myLayout]">테스트</button>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script>
+      const { createApp, reactive } = Vue;
+
+      let vm = createApp({
+        name: "App",
+        setup() {
+          const myColor = reactive({
+            backgroundColor: "purple",
+            color: "yellow",
+          });
+
+          const myLayout = reactive({
+            width: "150px",
+            height: "80px",
+            textAlign: "center",
+          });
+
+          return {
+            myColor,
+            myLayout,
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

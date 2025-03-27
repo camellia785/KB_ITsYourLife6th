@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue CDN Starter</title>
+  </head>
+
+  <!-- 옵션 API방식은 this를 이용해서 코드작성함
+   this가 오류를 일으키는 경우가 좀 있어서
+   composition API방식을 더 많이 사용함 -->
+
+  <body>
+    <div id="app">
+      <my-button></my-button>
+    </div>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script>
+      const { createApp, reactive, defineComponent } = Vue;
+
+      // Composition API를 사용하는 MyButton 컴포넌트 정의
+      const MyButton = defineComponent({
+        name: "MyButton",
+        setup() {
+          // 반응형 스타일 객체 생성
+          const style1 = reactive({
+            backgroundColor: "aqua",
+            color: "black",
+          });
+
+          // 버튼에 마우스를 올렸을 때 실행되는 함수
+          const overEvent = () => {
+            console.log("🌸 overEvent");
+            style1.backgroundColor = "purple";
+            style1.color = "yellow";
+          };
+
+          // 버튼에서 마우스를 떼었을 때 실행되는 함수
+          const outEvent = () => {
+            console.log("🌸 outEvent");
+            style1.backgroundColor = "aqua";
+            style1.color = "black";
+          };
+
+          // 부모 div에서 마우스를 올렸을 때 실행되는 함수
+          const parentOverEvent = () => {
+            console.log("🌸 parentOverEvent");
+          };
+
+          // 부모 div에서 마우스를 떼었을 때 실행되는 함수
+          const parentOutEvent = () => {
+            console.log("🌸 parentOutEvent");
+          };
+
+          return {
+            style1,
+            overEvent,
+            outEvent,
+            parentOverEvent,
+            parentOutEvent,
+          };
+        },
+        template: `
+          <div @mouseover="parentOverEvent" @mouseout="parentOutEvent">
+            <button 
+              :style="style1" 
+              @mouseover.stop="overEvent" 
+              @mouseout.stop="outEvent"
+            >
+              테스트
+            </button>
+          </div>
+        `,
+      });
+
+      // Vue 애플리케이션 생성 및 컴포넌트 등록
+      createApp({
+        components: {
+          MyButton,
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>
