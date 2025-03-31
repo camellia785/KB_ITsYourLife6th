@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+}
+
+.container {
+  margin: auto;
+  padding: 0.1rem;
+  max-width: 71.25rem; /*1140px*/
+  width: 100%;
+}
