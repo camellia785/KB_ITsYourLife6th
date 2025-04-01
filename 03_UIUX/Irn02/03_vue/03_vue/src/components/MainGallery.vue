@@ -12,6 +12,12 @@ import BaseButton from "./UI/BaseButton.vue";
       <BaseButton variant="btn-outline">Outlint</BaseButton>
       <BaseButton variant="btn-pill">Pill</BaseButton>
     </section>
+    <section class="component-card">
+      <h2>알림창</h2>
+      <BaseAlert variant="success">Sucess</BaseAlert>
+      <BaseAlert variant="warning">Warning</BaseAlert>
+      <BaseAlert variant="error">Error</BaseAlert>
+    </section>
   </main>
 </template>
 

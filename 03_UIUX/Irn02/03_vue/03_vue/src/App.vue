@@ -4,7 +4,8 @@ import MainGallery from "./components/MainGallery.vue";
 </script>
 
 <template>
-  <div>hi</div>
+  <CommonHeader />
+  <MainGallery />
 </template>
 
 <style scoped></style>
