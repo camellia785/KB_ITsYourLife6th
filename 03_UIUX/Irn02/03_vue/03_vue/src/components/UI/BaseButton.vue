@@ -52,7 +52,5 @@ const buttonClass = computed(() => {
 </style>
 
 <!-- 
-  <button class="btn-primary">Primary</button>
-  <button class="btn-outline">Outlint</button>
-  <button class="btn-pill">Pill</button>
+
    -->
