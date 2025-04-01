@@ -2,7 +2,7 @@
 import Parent from "./components/01_slot_basic/Parent.vue";
 import Parent2 from "./components/02_Named_slot/Parent2.vue";
 import Parent3 from "./components/03_dynamic-slot/Parent3.vue";
-import Parent4 from "./components/04_scoped-slot copy/Parent4.vue";
+import Parent4 from "./components/04_scoped-slot/Parent4.vue";
 </script>
 
 <!-- 
