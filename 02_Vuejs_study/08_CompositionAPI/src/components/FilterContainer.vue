@@ -1,11 +1,11 @@
 <script setup>
-import { ref } from 'vue'
-const currentFilter = ref('all')
+import { ref } from "vue";
+const currentFilter = ref("all");
 
-const emit = defineEmits(['update:filter'])
+const emit = defineEmits(["update:filter"]);
 function setFilter(filter) {
-  currentFilter.value = filter
-  emit('update:filter', filter)
+  currentFilter.value = filter;
+  emit("update:filter", filter);
 }
 </script>
 
