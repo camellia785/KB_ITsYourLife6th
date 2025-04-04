@@ -7,7 +7,7 @@ const studentStore = useStudentStore();
 <template>
   <div class="summary">
     <p>
-      전체 학생 수 : <strong>{{ studentStore.studentCount }} </strong>
+      전체 학생 수 : <strong>{{ studentStore.studentCount }}</strong>
     </p>
   </div>
 </template>

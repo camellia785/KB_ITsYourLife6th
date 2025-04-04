@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import { ref } from "vue";
+import { ref, computed } from "vue";
 import apiClient from "@/utils/axios";
 
 export const useStudentStore = defineStore("student", () => {
@@ -17,7 +17,8 @@ export const useStudentStore = defineStore("student", () => {
   };
 
   // getter
-  const studentCount = computed(() => studentCount.value.length);
+  // studentCount에서의 value가 아니라 stuents에서의 value를 사용해야 한다.
+  const studentCount = computed(() => students.value.length);
 
   return { fetchStudents, students, studentCount };
 });
