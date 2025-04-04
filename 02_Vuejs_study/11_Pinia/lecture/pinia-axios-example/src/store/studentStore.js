@@ -17,6 +17,7 @@ export const useStudentStore = defineStore("student", () => {
   };
 
   // getter
+  const studentCount = computed(() => studentCount.value.length);
 
-  return { fetchStudents, students };
+  return { fetchStudents, students, studentCount };
 });
