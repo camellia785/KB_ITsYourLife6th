@@ -21,7 +21,15 @@ public class Book {
         System.out.println("기본 생성자 호출함 .....");
     }
 
+    // 매개변수를 author랑 title만 받는 생성자
 
+    //오버로딩
+    // -> 같은 이름의 메소드나 생성자를 매개변수의 갯수나 타입에 따라 여러개 선언하는 것
+    public Book(String author, String title) {
+        System.out.println("매개변수를 author랑 title만 받는 생성자 호출됨..");
+        this.author=author;
+        this.title=title;
+    }
 
     //전체 생성자
     public Book(String author, String title, String coverType, int pageCount) {
