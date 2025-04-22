@@ -22,9 +22,18 @@ public class Application {
         smartPhone.abstMethod();
 
         //instance of: 특정 클래스나 인터페이스의 인스턴스인지여부를 검사하는데 사용되는 연산자
-        System.out.println(smartPhone instanceof String);
+//        System.out.println(smartPhone instanceof String);
         System.out.println(smartPhone instanceof Product);
 
+        Product product = new SmartPhone();
+
+        // 동적바인딩
+        product.abstMethod();
+
+        // 정적메소드는 Product로 바로 가능(입력하자마자 인스턴스화 시키지 않고도 올라가기 때문에)
+        Product.staticMethod();
+
+        product.nonStaticMethod();
 
     }
 }
