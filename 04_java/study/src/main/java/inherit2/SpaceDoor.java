@@ -1,6 +1,6 @@
 package main.java.inherit2;
 
-public class SpaceDoor {
+public class SpaceDoor extends Door{
     public boolean night = false; //저녁 여부
     //저녁에는 집안에서 리모컨으로 열다.
     //낮에는 문을 직접 옆으로 열다.
