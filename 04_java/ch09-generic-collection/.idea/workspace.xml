@@ -5,35 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cfd36a55-6cad-432e-8f4c-700f909345cd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/advanced/ch13/sec03/exam01/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/advanced/ch13/sec03/exam01/GenericExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/ch13/sec01/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/ch13/sec01/GenericExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/ch13/sec02/exam01/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/ch13/sec02/exam01/GenericExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/ch13/sec02/exam01/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/ch13/sec02/exam01/Tv.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/ch13/sec02/exam02/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/ch13/sec02/exam02/CarAgency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/ch13/sec02/exam02/GenericExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/ch13/sec02/exam02/Home.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/ch13/sec02/exam02/HomeAgency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/ch13/sec02/exam02/Rentable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/lecture/extend/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/lecture/extend/Bunny.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/lecture/extend/DrunkenBunny.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/lecture/extend/Mammal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/lecture/extend/Rabbit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/lecture/extend/RabbitFarm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/lecture/extend/Reptile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/lecture/extend/Snake.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/lecture/extend/WildCardFarm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/lecture/extend/run/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/lecture/extend/run/Application2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/lecture/generic/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/lecture/generic/GenericTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/advanced/ch15/sec02/exam01/ArrayListExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/advanced/ch15/sec02/exam01/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/advanced/ch15/sec02/exam03/LinkedListExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch08-multithread/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch08-multithread/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +64,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.ch09-generic-collection [:advanced.ch15.sec02.exam01.ArrayListExample.main()].executor": "Run",
+    "Gradle.ch09-generic-collection [:advanced.ch15.sec02.exam03.LinkedListExample.main()].executor": "Run",
     "Gradle.ch09-generic-collection [:basic.ch13.sec01.GenericExample.main()].executor": "Run",
     "Gradle.ch09-generic-collection [:basic.ch13.sec02.exam02.GenericExample.main()].executor": "Run",
     "Gradle.ch09-generic-collection [:basic.lecture.extend.run.Application.main()].executor": "Run",
@@ -125,7 +104,7 @@
       <option name="presentableId" value="Default" />
       <updated>1745904014751</updated>
       <workItem from="1745904015954" duration="36000" />
-      <workItem from="1745904055845" duration="6507000" />
+      <workItem from="1745904055845" duration="11016000" />
     </task>
     <servers />
   </component>
