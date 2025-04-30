@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfd36a55-6cad-432e-8f4c-700f909345cd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/advanced/ch15/sec02/exam01/ArrayListExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/advanced/ch15/sec02/exam01/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/advanced/ch15/sec02/exam03/LinkedListExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch08-multithread/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch08-multithread/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-    </list>
+    <list default="true" id="cfd36a55-6cad-432e-8f4c-700f909345cd" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1745904014751</updated>
       <workItem from="1745904015954" duration="36000" />
-      <workItem from="1745904055845" duration="11016000" />
+      <workItem from="1745904055845" duration="11059000" />
     </task>
     <servers />
   </component>
