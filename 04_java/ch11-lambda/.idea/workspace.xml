@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6da8d41b-2227-4002-afeb-b8eb7a4683e4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/advanced/ch16/sec05/exam01/Calcuable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/advanced/ch16/sec05/exam01/Computer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/advanced/ch16/sec05/exam01/MethodReferenceExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/advanced/ch16/sec05/exam01/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/advanced/ch16/sec05/exam03/ConstructorReferenceExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/advanced/ch16/sec05/exam03/Creatable1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/advanced/ch16/sec05/exam03/Creatable2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/advanced/ch16/sec05/exam03/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/advanced/ch16/sec05/exam03/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lecture/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lecture/Example.java" afterDir="false" />
-    </list>
+    <list default="true" id="6da8d41b-2227-4002-afeb-b8eb7a4683e4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,25 +26,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "camellia785"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;camellia785&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/camellia785/KB_ITsYourLife6th.git",
-    "accountId": "d7a07aa8-b238-4209-8a7b-b4a31276c276"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/camellia785/KB_ITsYourLife6th.git&quot;,
+    &quot;accountId&quot;: &quot;d7a07aa8-b238-4209-8a7b-b4a31276c276&quot;
   }
-}]]></component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2wkup8ptXX6sqHCBbz3PKz2m9R7" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -64,32 +52,32 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.ch11-lambda [:advanced.ch16.sec05.exam01.MethodReferenceExample.main()].executor": "Run",
-    "Gradle.ch11-lambda [:advanced.ch16.sec05.exam03.ConstructorReferenceExample.main()].executor": "Run",
-    "Gradle.ch11-lambda [:basic.ch16.sec01.LambdaExample.main()].executor": "Run",
-    "Gradle.ch11-lambda [:basic.ch16.sec02.exam01.LambdaExample.main()].executor": "Run",
-    "Gradle.ch11-lambda [:basic.ch16.sec03.LambdaExample.main()].executor": "Run",
-    "Gradle.ch11-lambda [:basic.ch16.sec04.LambdaExample.main()].executor": "Run",
-    "Gradle.ch11-lambda [:lecture.Example.main()].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "FeaturesTrainerSettingsPanel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.ch11-lambda [:advanced.ch16.sec05.exam01.MethodReferenceExample.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ch11-lambda [:advanced.ch16.sec05.exam03.ConstructorReferenceExample.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ch11-lambda [:basic.ch16.sec01.LambdaExample.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ch11-lambda [:basic.ch16.sec02.exam01.LambdaExample.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ch11-lambda [:basic.ch16.sec03.LambdaExample.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ch11-lambda [:basic.ch16.sec04.LambdaExample.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ch11-lambda [:lecture.Example.main()].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;FeaturesTrainerSettingsPanel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -106,6 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746598074124</updated>
       <workItem from="1746598075273" duration="9885000" />
+      <workItem from="1746664925246" duration="609000" />
     </task>
     <servers />
   </component>
