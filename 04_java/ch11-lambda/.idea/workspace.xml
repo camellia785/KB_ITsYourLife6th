@@ -5,25 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6da8d41b-2227-4002-afeb-b8eb7a4683e4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/ch16/sec01/Calculable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/ch16/sec01/CalculableImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/ch16/sec01/LambdaExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/ch16/sec02/exam01/LambdaExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/ch16/sec02/exam01/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/ch16/sec02/exam01/Workable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/ch16/sec03/LambdaExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/ch16/sec03/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/ch16/sec03/Speakable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/ch16/sec03/Workable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/ch16/sec04/Calculable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/ch16/sec04/LambdaExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basic/ch16/sec04/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lecture/Example.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lecture/Example2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/advanced/ch16/sec05/exam01/Calcuable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/advanced/ch16/sec05/exam01/Computer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/advanced/ch16/sec05/exam01/MethodReferenceExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/advanced/ch16/sec05/exam01/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/advanced/ch16/sec05/exam03/ConstructorReferenceExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/advanced/ch16/sec05/exam03/Creatable1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/advanced/ch16/sec05/exam03/Creatable2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/advanced/ch16/sec05/exam03/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/advanced/ch16/sec05/exam03/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lecture/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lecture/Example.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +66,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.ch11-lambda [:advanced.ch16.sec05.exam01.MethodReferenceExample.main()].executor": "Run",
+    "Gradle.ch11-lambda [:advanced.ch16.sec05.exam03.ConstructorReferenceExample.main()].executor": "Run",
     "Gradle.ch11-lambda [:basic.ch16.sec01.LambdaExample.main()].executor": "Run",
     "Gradle.ch11-lambda [:basic.ch16.sec02.exam01.LambdaExample.main()].executor": "Run",
     "Gradle.ch11-lambda [:basic.ch16.sec03.LambdaExample.main()].executor": "Run",
@@ -111,7 +105,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1746598074124</updated>
-      <workItem from="1746598075273" duration="6785000" />
+      <workItem from="1746598075273" duration="9885000" />
     </task>
     <servers />
   </component>

@@ -34,9 +34,9 @@ public class Example {
         BinaryOperator<String> binaryOperator = (str2, str3)-> str2+ str3;
         System.out.println(binaryOperator.apply("hello","world"));
 
-        /*Predicate<T> #test (T t) : boolean : T를 조사하여 boolean을 리턴*/
+        /* Predicate<T>#test(T t) : boolean : T를 조사하여 boolean을 리턴*/
         Predicate<Object> predicate = value -> value instanceof String;
-//        System.out.println("문자열인지 확인 : " + predicate.test());
-
+        System.out.println("문자열인지 확인 : " + predicate.test("123")); // true
+        System.out.println("문자열인지 확인 : " + predicate.test(123)); // false
     }
 }
