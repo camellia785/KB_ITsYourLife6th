@@ -13,6 +13,9 @@
     <file url="file://$PROJECT_DIR$/03_SQL기본/lecture/04_WHERE.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/03_SQL기본/lecture/05_KEYWORD.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/03_SQL기본/lecture/06_GROUPBY.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/04_SQL심화/advanced/01_sqldb.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/04_SQL심화/advanced/02_sqldb2.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/04_SQL심화/advanced/03_employees.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/04_SQL심화/basic/01_sqldb.sql" dialect="MySQL" />
     <file url="PROJECT" dialect="MySQL" />
   </component>
