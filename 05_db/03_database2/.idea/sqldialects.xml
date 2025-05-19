@@ -17,6 +17,12 @@
     <file url="file://$PROJECT_DIR$/04_SQL심화/advanced/02_sqldb2.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/04_SQL심화/advanced/03_employees.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/04_SQL심화/basic/01_sqldb.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/05_테이블_뷰_테이블스페이스/advanced/01_tabledb/01.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/05_테이블_뷰_테이블스페이스/advanced/01_tabledb/02.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/05_테이블_뷰_테이블스페이스/advanced/01_tabledb/03.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/05_테이블_뷰_테이블스페이스/advanced/01_tabledb/04.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/05_테이블_뷰_테이블스페이스/advanced/01_tabledb/05.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/05_테이블_뷰_테이블스페이스/advanced/02_viewdb/01.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/05_테이블_뷰_테이블스페이스/basic/01_tabledb/01_ddl.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/05_테이블_뷰_테이블스페이스/basic/01_tabledb/02_dml.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/05_테이블_뷰_테이블스페이스/basic/01_tabledb/03_ddl.sql" dialect="MySQL" />
