@@ -1,3 +1,4 @@
+use employees;
 -- 각 부서별 관리자를 출력 (단 현 재직자만)
 select *
 from dept_manager -- 부서별 관리자 tb
