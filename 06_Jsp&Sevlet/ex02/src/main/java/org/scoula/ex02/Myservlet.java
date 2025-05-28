@@ -23,12 +23,12 @@ public class Myservlet extends HttpServlet {
     //post 요청시 자동호출
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("post 요청됨");
+        System.out.println("get 요청됨");
     }
 
     //get 요청시 자동호출
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("get 요청됨");
+        System.out.println("post 요청됨");
     }
 }

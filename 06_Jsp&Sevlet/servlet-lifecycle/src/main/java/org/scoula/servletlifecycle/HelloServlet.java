@@ -1,26 +1,19 @@
-package org.scoula.ex02;
+package org.scoula.servletlifecycle;
 
 import java.io.*;
-import javax.servlet.ServletException;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
-@WebServlet(name = "helloServlet", value = {"/xxx", "/yyy"})
+//@WebServlet(name = "helloServlet", value = "/hello-servlet")
 public class HelloServlet extends HttpServlet {
     private String message;
 
-    @Override
-    public void init() throws ServletException {
+    public void init() {
         message = "Hello World!";
-        System.out.println("init() 호출됨 - 초기화완료");
-    }
-
-    @Override
-    public void destroy() {
-        System.out.println("destroy() 호출됨 - 리소스 정리");
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        // MIME 타입 설정
         response.setContentType("text/html");
 
         // Hello
@@ -30,4 +23,6 @@ public class HelloServlet extends HttpServlet {
         out.println("</body></html>");
     }
 
+    public void destroy() {
+    }
 }
