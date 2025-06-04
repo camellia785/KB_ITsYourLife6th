@@ -14,7 +14,6 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter'
 
     // jdbc mysql driver
-
     // https://mvnrepository.com/artifact/org.assertj/assertj-core
     testImplementation 'org.assertj:assertj-core:3.27.3'
     implementation 'mysql:mysql-connector-java:8.0.30'

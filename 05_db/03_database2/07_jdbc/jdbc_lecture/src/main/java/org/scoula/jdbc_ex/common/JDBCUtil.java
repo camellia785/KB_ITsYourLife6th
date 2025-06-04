@@ -23,12 +23,15 @@ public class JDBCUtil {
             prop.load(jdbc.common.JDBCUtil.class.getResourceAsStream("/application.properties"));
             System.out.println("props" + prop);
 
+            //
             String driver = prop.getProperty("driver");
             String url = prop.getProperty("url");
             String user = prop.getProperty("user");
             String password = prop.getProperty("password");
 
+            // 1. 커넥터설정
             Class.forName(driver);
+
 
             conn = DriverManager.getConnection(url, user, password);
 
