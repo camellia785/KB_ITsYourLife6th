@@ -13,7 +13,7 @@ import org.springframework.web.servlet.view.JstlView;
 
 // mvc 관련된 설정이나 객체생성 + 주입
 @EnableWebMvc // mvc관련된 설정을 할 수 있는 파일로 등록
-@ComponentScan(basePackages = {"org.scoula.controller"})
+@ComponentScan(basePackages = {"org.scoula"})
 
 // Spring MvC용 컴포넌트 등록을 위한 스캔 패키지
 public class ServletConfig implements WebMvcConfigurer {
