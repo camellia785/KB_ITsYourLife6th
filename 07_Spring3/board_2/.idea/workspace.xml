@@ -5,122 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbda83a7-0c5d-4657-ab59-5000388a0553" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/.idea/0613_im_lec.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/.idea/template-meta.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../07_Spring2/ex05_bear_lec/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../07_Spring2/ex05_bear_lec/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../07_Spring2/ex05_bear_lec/.idea/ex05_bear_lec.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../07_Spring2/ex05_bear_lec/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../07_Spring2/ex05_bear_lec/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../07_Spring2/ex05_bear_lec/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../07_Spring2/ex05_bear_lec/.idea/modules/ex05.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../07_Spring2/ex05_bear_lec/.idea/modules/ex05.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../07_Spring2/ex05_bear_lec/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../07_Spring2/spring_db0616.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/BoardMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/board/domain/BoardVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/board/mapper/BoardMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/exception/CommonExceptionAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4jdbc.log4j2.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/scoula/mapper/BoardMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/scoula/mapper/MapperTemplate.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/custom404.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error_page.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/scoula/board/mapper/BoardMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/scoula/config/RootConfigTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/scoula/persistence/JDBCTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../05_db/test_db2" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_db/test_db2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/.idea/description.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/.idea/description.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/.idea/project-template.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/.idea/project-template.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/.idea/template-meta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/database.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/src/main/java/org/scoula/config/RootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/src/main/java/org/scoula/config/RootConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/src/main/java/org/scoula/config/ServletConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/src/main/java/org/scoula/config/ServletConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/src/main/java/org/scoula/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/src/main/java/org/scoula/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/src/main/java/org/scoula/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/src/main/java/org/scoula/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/src/main/java/org/scoula/exception/CommonExceptionAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/src/main/java/org/scoula/exception/CommonExceptionAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/src/main/java/org/scoula/mapper/TimeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/src/main/java/org/scoula/mapper/TimeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/src/main/resources/log4jdbc.log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/src/main/resources/log4jdbc.log4j2.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/src/main/resources/org/scoula/mapper/MapperTemplate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/src/main/resources/org/scoula/mapper/MapperTemplate.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/src/main/webapp/WEB-INF/views/custom404.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/src/main/webapp/WEB-INF/views/custom404.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/src/main/webapp/WEB-INF/views/error_page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/src/main/webapp/WEB-INF/views/error_page.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/src/test/java/org/scoula/config/RootConfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/src/test/java/org/scoula/config/RootConfigTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/src/test/java/org/scoula/mapper/TimeMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/src/test/java/org/scoula/mapper/TimeMapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy-템플릿/src/test/java/org/scoula/persistence/JDBCTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/MyBatisSpringLegacy/src/test/java/org/scoula/persistence/JDBCTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/.idea/description.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/.idea/description.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/.idea/project-template.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/.idea/project-template.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/.idea/template-meta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/.idea/template-meta.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/src/main/java/org/scoula/config/RootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/src/main/java/org/scoula/config/RootConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/src/main/java/org/scoula/config/ServletConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/src/main/java/org/scoula/config/ServletConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/src/main/java/org/scoula/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/src/main/java/org/scoula/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/src/main/java/org/scoula/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/src/main/java/org/scoula/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/src/main/java/org/scoula/ex04/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/src/main/java/org/scoula/ex04/HelloServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/src/main/java/org/scoula/exception/CommonExceptionAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/src/main/java/org/scoula/exception/CommonExceptionAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/src/main/java/org/scoula/mapper/TimeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/src/main/java/org/scoula/mapper/TimeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/src/main/resources/org/scoula/mapper/TimeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/src/main/resources/org/scoula/mapper/TimeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/src/main/webapp/WEB-INF/views/custom404.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/src/main/webapp/WEB-INF/views/custom404.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/src/main/webapp/WEB-INF/views/error_page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/src/main/webapp/WEB-INF/views/error_page.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/src/test/java/org/scoula/config/RootConfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/src/test/java/org/scoula/config/RootConfigTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/src/test/java/org/scoula/mapper/TimeMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/src/test/java/org/scoula/mapper/TimeMapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/src/test/java/org/scoula/persistence/JDBCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/src/test/java/org/scoula/persistence/JDBCTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis설정/src/test/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/ex04-mybatis/src/test/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_Spring2/ex04/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/ex04/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_Spring2/0613_im_lec/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/template-meta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/template-meta.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/scoula/config/RootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scoula/config/RootConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/scoula/config/ServletConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scoula/config/ServletConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/scoula/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scoula/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/scoula/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scoula/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -427,7 +312,7 @@
       <option name="presentableId" value="Default" />
       <updated>1750062258435</updated>
       <workItem from="1750062259477" duration="151000" />
-      <workItem from="1750062421706" duration="5145000" />
+      <workItem from="1750062421706" duration="5346000" />
     </task>
     <servers />
   </component>
