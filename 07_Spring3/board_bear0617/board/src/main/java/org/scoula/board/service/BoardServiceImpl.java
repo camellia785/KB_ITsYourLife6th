@@ -25,7 +25,7 @@ import static org.scoula.common.util.UploadFiles.upload;
 public class BoardServiceImpl implements BoardService {
 
     // 파일 저장될 디렉토리 경로
-    private final static String BASE_DIR = "c:/upload/board";
+    private final static String BASE_DIR = "/Users/yeon/Downloads/upload/";
 
     //전처리해서 dao의 메서드를 불러서 db처리해달라고 해야함.
     private final BoardMapper mapper;
