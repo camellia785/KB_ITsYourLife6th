@@ -20,30 +20,30 @@ import java.io.IOException;
 @Component
 @RequiredArgsConstructor
 public class LoginSuccessHandler implements AuthenticationSuccessHandler {
-
-    // JWT 토큰 생성기 주입
     private final JwtProcessor jwtProcessor;
 
-    // JWT와 사용자 정보 DTO를 묶어서 AuthResultDTO 생성
     private AuthResultDTO makeAuthResult(CustomUser user) {
+
+        //JsonResponse로 보낼 값들 만ㄷ르어야함.
+        //성공했으므로  Authentication객체가 이미 만들어져서
+        //SecuriyContextHolder에 들어가 있음.
+
         String username = user.getUsername();
+        // 토큰 생성
         String token = jwtProcessor.generateToken(username);
+        // 토큰 + 사용자 기본 정보 (사용자명, ...)를 묶어서 AuthResultDTO 구성
         return new AuthResultDTO(token, UserInfoDTO.of(user.getMember()));
     }
 
-    // 로그인 성공 시 실행되는 메서드
     @Override
-    public void onAuthenticationSuccess(HttpServletRequest request,
-                                        HttpServletResponse response,
+    public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
                                         Authentication authentication) throws IOException, ServletException {
-
-        // 인증된 사용자 정보 가져오기
+        // 인증 결과 Principal
         CustomUser user = (CustomUser) authentication.getPrincipal();
 
-        // JWT 및 사용자 정보 포함된 응답 DTO 생성
+        // 인증 성공 결과를 JSON으로 직접 응답
         AuthResultDTO result = makeAuthResult(user);
-
-        // JSON 형식으로 클라이언트에게 응답 전송
         JsonResponse.send(response, result);
     }
 }
+

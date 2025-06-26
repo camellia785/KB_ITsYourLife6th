@@ -12,13 +12,11 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Log4j2
-@RequiredArgsConstructor
+@RequiredArgsConstructor //생성자를 자동으로 주입해줌.
 public class CustomUserDetailsService implements UserDetailsService {
 
-    // DB에서 사용자 정보를 가져오는 Mapper 주입
     private final UserDetailsMapper userDetailsMapper;
 
-    // 사용자 ID로 DB에서 회원 정보 조회 → CustomUser로 변환
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         MemberVO memberVO = userDetailsMapper.get(username);

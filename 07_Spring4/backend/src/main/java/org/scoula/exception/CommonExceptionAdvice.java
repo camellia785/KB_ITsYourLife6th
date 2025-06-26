@@ -25,7 +25,6 @@ public class CommonExceptionAdvice {
     @ExceptionHandler(NoHandlerFoundException.class)
     public String handle404(NoHandlerFoundException ex) {
         log.error(ex);
-
         return "/resources/index.html";
     }
 

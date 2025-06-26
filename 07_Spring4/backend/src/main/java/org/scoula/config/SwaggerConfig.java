@@ -37,6 +37,7 @@ public class SwaggerConfig {
     @Bean
     public Docket api(ServletContext servletContext) {
         return new Docket(DocumentationType.SWAGGER_2)
+                // JWT 인증
                 .securityContexts(List.of(this.securityContext())) // SecurityContext 설정
                 .securitySchemes(List.of(this.apiKey())) // ApiKey 설정
                 .select()
@@ -51,10 +52,8 @@ public class SwaggerConfig {
     // JWT SecurityContext 구성
     private SecurityContext securityContext() {
         return SecurityContext.builder()
-
                 .securityReferences(defaultAuth())
                 .build();
-
     }
 
     private List<SecurityReference> defaultAuth() {
@@ -68,5 +67,6 @@ public class SwaggerConfig {
     private ApiKey apiKey() {
         return new ApiKey("Authorization", "Authorization", "header");
     }
+
 
 }
