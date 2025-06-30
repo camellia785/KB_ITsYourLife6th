@@ -18,7 +18,7 @@ public class MemberJoinDTO {
 
     private MultipartFile avatar;      // 아바타 이미지 파일
 
-    // MemberJoinDTO -> MemberVO 변환 메서드
+    // MemberVO 변환 메서드
     // org.scoula.security.account.domain.MemberVO 클래스에 @Builder 추가
     public MemberVO toVO() {
         return MemberVO.builder()
