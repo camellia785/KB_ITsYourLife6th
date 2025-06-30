@@ -23,6 +23,7 @@ const error = ref("");
 // 둘 다 입력되지 않으면 true → 로그인 버튼 비활성화
 const disableSubmit = computed(() => !(member.username && member.password));
 
+// 로그인 로직
 const login = async () => {
   console.log(member);
   try {
@@ -36,6 +37,7 @@ const login = async () => {
 };
 </script>
 
+<!-- 템플릿구조 -->
 <template>
   <div class="mt-5 mx-auto" style="width: 500px">
     <h1 class="my-5">
@@ -44,10 +46,10 @@ const login = async () => {
     </h1>
 
     <form @submit.prevent="login">
+      <!-- 사용자 ID 입력 -->
       <div class="mb-3 mt-3">
         <label for="username" class="form-label">
-          <i class="fa-solid fa-user"></i>
-          사용자 ID:
+          <i class="fa-solid fa-user"></i> 사용자 ID:
         </label>
         <input
           type="text"
@@ -57,10 +59,10 @@ const login = async () => {
         />
       </div>
 
+      <!-- 비밀번호 입력 -->
       <div class="mb-3">
         <label for="password" class="form-label">
-          <i class="fa-solid fa-lock"></i>
-          비밀번호:
+          <i class="fa-solid fa-lock"></i> 비밀번호:
         </label>
         <input
           type="password"
@@ -70,15 +72,16 @@ const login = async () => {
         />
       </div>
 
+      <!-- 에러 메시지 표시 -->
       <div v-if="error" class="text-danger">{{ error }}</div>
 
+      <!-- 로그인 버튼 -->
       <button
         type="submit"
         class="btn btn-primary mt-4"
         :disabled="disableSubmit"
       >
-        <i class="fa-solid fa-right-to-bracket"></i>
-        로그인
+        <i class="fa-solid fa-right-to-bracket"></i> 로그인
       </button>
     </form>
   </div>
