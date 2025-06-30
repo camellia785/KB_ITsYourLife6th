@@ -1,13 +1,13 @@
 <script setup>
-import { reactive, computed } from 'vue';
-import config from '@/config';
-import MenuGroup from './menu/MenuGroup.vue';
-import AccountMenuGroup from './menu/AccountMenuGroup.vue';
+import { reactive, computed } from "vue";
+import config from "@/config";
+import MenuGroup from "./menu/MenuGroup.vue";
+import AccountMenuGroup from "./menu/AccountMenuGroup.vue";
 
 let state = reactive({ isNavShow: false });
 
 let navClass = computed(() =>
-  state.isNavShow ? 'collapse navbar-collapse show' : 'collapse navbar-collapse'
+  state.isNavShow ? "collapse navbar-collapse show" : "collapse navbar-collapse"
 );
 
 const toggleNavShow = () => (state.isNavShow = !state.isNavShow);
