@@ -44,7 +44,7 @@ public class MemberServiceImpl implements MemberService {
     // 아바타 파일 저장
     private void saveAvatar(MultipartFile avatar, String username) {
         if (avatar != null && !avatar.isEmpty()) {
-            File dest = new File("c:/upload/avatar", username + ".png");
+            File dest = new File("/Users/yeon/Downloads/upload/avatar", username + ".png");
             try {
                 avatar.transferTo(dest);  // 파일 저장
             } catch (IOException e) {

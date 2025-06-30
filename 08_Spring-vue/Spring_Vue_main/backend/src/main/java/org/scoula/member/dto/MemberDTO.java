@@ -14,6 +14,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+// 응답용도, password 없음
 public class MemberDTO {
     private String username;
     private String email;
