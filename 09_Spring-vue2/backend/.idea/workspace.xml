@@ -5,20 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb305353-0530-4d53-9e34-48c4a928f74c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/member/dto/MemberUpdateDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/member/exception/PasswordMismatchException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/member/dto/ChangePasswordDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../05_db/test_db2" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_db/test_db2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/scoula/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scoula/config/WebConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/scoula/member/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scoula/member/controller/MemberController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/scoula/member/mapper/MemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scoula/member/mapper/MemberMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/scoula/member/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scoula/member/service/MemberService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/scoula/member/service/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scoula/member/service/MemberServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/scoula/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scoula/security/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/org/scoula/mapper/MapperTemplate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/scoula/mapper/MapperTemplate.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/org/scoula/member/mapper/MemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/scoula/member/mapper/MemberMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/api/authApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/api/authApi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/stores/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/stores/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/router/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/router/auth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +98,9 @@
   "associatedIndex": 3
 }]]></component>
   <component name="ProjectId" id="2zGBYURrswSDUmXfsaa2sYCDGDU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -260,7 +262,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1751347577142</updated>
-      <workItem from="1751347578636" duration="3773000" />
+      <workItem from="1751347578636" duration="6862000" />
     </task>
     <servers />
   </component>

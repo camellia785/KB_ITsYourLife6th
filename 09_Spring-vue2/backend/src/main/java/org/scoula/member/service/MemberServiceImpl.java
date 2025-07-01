@@ -2,9 +2,11 @@ package org.scoula.member.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.scoula.member.dto.ChangePasswordDTO;
 import org.scoula.member.dto.MemberDTO;
 import org.scoula.member.dto.MemberJoinDTO;
 import org.scoula.member.dto.MemberUpdateDTO;
+import org.scoula.member.exception.PasswordMismatchException;
 import org.scoula.member.mapper.MemberMapper;
 import org.scoula.security.account.domain.AuthVO;
 import org.scoula.security.account.domain.MemberVO;
@@ -45,7 +47,7 @@ public class MemberServiceImpl implements MemberService {
     // 아바타 파일 저장
     private void saveAvatar(MultipartFile avatar, String username) {
         if (avatar != null && !avatar.isEmpty()) {
-            File dest = new File("c:/upload/avatar", username + ".png");
+            File dest = new File("/Users/yeon/Downloads/upload/avatar", username + ".png");
             try {
                 avatar.transferTo(dest);  // 파일 저장
             } catch (IOException e) {
@@ -82,6 +84,24 @@ public class MemberServiceImpl implements MemberService {
     @Override
     public MemberDTO update(MemberUpdateDTO member) {
         return null;
+    }
+
+    // 비밀번호 변경 서비스
+    @Override
+    public void changePassword(ChangePasswordDTO changePassword) {
+        // 1. 사용자 정보 조회
+        MemberVO member = mapper.get(changePassword.getUsername());
+
+        // 2. 기존 비밀번호 검증
+        if(!passwordEncoder.matches(changePassword.getOldPassword(), member.getPassword())) {
+            throw new PasswordMismatchException();
+        }
+
+        // 3. 새 비밀번호 암호화
+        changePassword.setNewPassword(passwordEncoder.encode(changePassword.getNewPassword()));
+
+        // 4. 데이터베이스 업데이트
+        mapper.updatePassword(changePassword);
     }
 
 }
