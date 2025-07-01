@@ -22,6 +22,7 @@
         <result property="updateDate" column="update_date"/>
         <collection property="authList" resultMap="authMap"/>
     </resultMap>
+    <update id="update"></update>
 
     <!-- SQL -->
     <!-- 회원 정보 조회 (LEFT JOIN으로 권한 정보 포함) -->

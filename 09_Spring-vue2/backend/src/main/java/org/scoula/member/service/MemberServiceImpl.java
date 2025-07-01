@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.scoula.member.dto.MemberDTO;
 import org.scoula.member.dto.MemberJoinDTO;
+import org.scoula.member.dto.MemberUpdateDTO;
 import org.scoula.member.mapper.MemberMapper;
 import org.scoula.security.account.domain.AuthVO;
 import org.scoula.security.account.domain.MemberVO;
@@ -76,6 +77,11 @@ public class MemberServiceImpl implements MemberService {
 
         // 5. 저장된 회원정보 반환
         return get(member.getUsername());
+    }
+
+    @Override
+    public MemberDTO update(MemberUpdateDTO member) {
+        return null;
     }
 
 }
