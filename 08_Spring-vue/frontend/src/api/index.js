@@ -15,8 +15,9 @@ instance.interceptors.request.use(
     const token = getToken();
     if (token) {
       // 토큰이 있는 경우
+      // config.headers: 요청헤더
       config.headers["Authorization"] = `Bearer ${token}`;
-      console.log(config.headers.Authorization);
+      console.log("전송될 JWT >> " + config.headers.Authorization);
     }
     return config;
   },

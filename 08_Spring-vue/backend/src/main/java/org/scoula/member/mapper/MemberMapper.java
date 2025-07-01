@@ -12,4 +12,5 @@ public interface MemberMapper {
 
     int insertAuth(AuthVO auth); // 회원 권한 정보 추가
 
+    int update(MemberVO member);
 }

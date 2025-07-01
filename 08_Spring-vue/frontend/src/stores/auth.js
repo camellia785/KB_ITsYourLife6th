@@ -23,26 +23,28 @@ export const useAuthStore = defineStore("auth", () => {
   // isLogin 사용자명 존재 여부로 로그인 상태 판단
   // username, email 반응형 데이터로 컴포넌트에서 자동 업데이트
   // !! 연산자로 boolean 타입 변환 보장
-
-  // 액션 메서드 작성 영역
-});
-// 스토어 정의
-export const useAuthStore = defineStore("auth", () => {
   // 초기상태, 스토어 정의 ...
 
   // 액션 메서드 작성 영역
 
-  // 로그인 액션
+  // 로그인 함수
   const login = async (member) => {
-    // 임시 테스트용 로그인 (실제 API 호출 전)
-    state.value.token = "test token";
-    state.value.user = {
-      username: member.username,
-      email: member.username + "@test.com",
-    };
-
-    // localStorage에 상태 저장
-    localStorage.setItem("auth", JSON.stringify(state.value));
+    // state.value.token = 'test token'; // 테스트용 토큰 (임시)
+    // state.value.user = {
+    //   username: member.username,
+    //   email: member.username + '@test.com',
+    // };
+    // 로그인 API 호출
+    const { data } = await axios.post("/api/auth/login", member);
+    /**
+     * 백엔드에서는 아래와 같은 필터로 처리:
+     * - 경로: setFilterProcessesUrl("/api/auth/login")
+     * - 성공: setAuthenticationSuccessHandler()
+     * - 실패: setAuthenticationFailureHandler()
+     */
+    state.value = { ...data }; // 응답 데이터 저장
+    console.log(state); // 디버그 출력
+    localStorage.setItem("auth", JSON.stringify(state.value)); // 로컬스토리지 저장
   };
 
   // 로그아웃 액션
