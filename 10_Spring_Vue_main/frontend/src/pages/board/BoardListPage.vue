@@ -1,12 +1,15 @@
 <script setup>
 import api from "@/api/boardApi";
-import { ref, reactive, computed } from "vue";
+import { ref, computed } from "vue";
 import moment from "moment";
 import { useRoute, useRouter } from "vue-router";
 import { useAuthStore } from "@/stores/auth";
-const cr = useRoute();
-//컴포넌트를 호출할 때 입력값을 줄 수 있다.
-const router = useRouter();
+
+const cr = useRoute(); // 현재 라우트 정보
+const router = useRouter(); // 라이터 인스턴스
+
+const page = ref({}); // 페이지 데이터 저장
+const articles = computed(() => page.value); // 반응형 게시글 목록
 
 const auth = useAuthStore();
 const islogin = auth.isLogin;
@@ -16,21 +19,24 @@ const islogin = auth.isLogin;
 //load()함수 정의후 --> 시작하자 마자 호출
 //list를 가지고 와서  articles에 넣을 예정임.
 
-//페이징을 내일 할 예정
-const page = ref({});
 //페이지바뀔 때마다 데이터를 가지고 올 예정인데
 //그 데이터가 바뀌는지 자동 변동 여부 설정
 //페이지에 따라 가지고 온 정보가 바뀌면 바뀐 데이터로
 //자동으로 계산되어 articles에 넣어주세요.
 
-const articles = computed(() => page.value);
+// 게시글 목록 로드
 const load = async () => {
   try {
     page.value = await api.getList();
     console.log(page.value);
-  } catch {}
+  } catch {
+    error;
+  }
+  console.error("목록 로드 실패:", error);
 };
-load(); //해당 컴포넌트가 로드되자마자 load()함수를 불러서
+
+load(); // 컴포넌트 마운트 시 실행
+//해당 컴포넌트가 로드되자마자 load()함수를 불러서
 //백엔드 서버로 부터 json으로 받아오자.
 </script>
 

@@ -7,15 +7,19 @@ import { useRoute, useRouter } from "vue-router";
 const auth = useAuthStore();
 const router = useRouter();
 const cr = useRoute();
-const files = ref(null);
+const files = ref(null); // 파일 input 참조
 
 const article = reactive({
-  writer: auth.username,
+  writer: auth.username, // 로그인된 사용자명
   title: "",
+  content: "",
   files: null,
 });
 
+// 제목이 입력된 경우에만 제출 버튼 활성화
 const disableSubmit = computed(() => !article.title);
+
+// 폼 제출 처리
 const submit = async () => {
   if (!confirm("등록할까요?")) return;
 
