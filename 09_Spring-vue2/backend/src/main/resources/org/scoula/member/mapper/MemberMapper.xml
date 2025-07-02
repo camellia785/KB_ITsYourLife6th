@@ -60,4 +60,22 @@
         update_date = now()            <!-- 수정 시간 자동 업데이트 -->
         WHERE username = #{username}
     </update>
+
+    <select id="selectBoardWithAttachments" resultType="BoardDTO">
+        SELECT
+            b.*,
+            a.no AS ano,
+            a.bno,
+            a.filename,
+            a.path,
+            a.content_type,
+            a.size,
+            a.reg_date AS a_reg_date
+        FROM tbl_board b
+                 LEFT OUTER JOIN tbl_board_attachment a
+                                 ON b.no = a.bno
+        WHERE b.no = #{no}
+        ORDER BY a.filename
+    </select>
+
 </mapper>

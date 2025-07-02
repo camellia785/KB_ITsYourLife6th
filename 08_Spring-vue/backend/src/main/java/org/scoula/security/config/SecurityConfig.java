@@ -36,7 +36,6 @@ import org.springframework.web.filter.CorsFilter;
 @MapperScan(basePackages = {"org.scoula.security.account.mapper"})
 @ComponentScan(basePackages = {"org.scoula.security"})
 @RequiredArgsConstructor
-
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     private final UserDetailsService userDetailsService;

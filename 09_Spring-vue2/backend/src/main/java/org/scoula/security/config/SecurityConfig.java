@@ -111,7 +111,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .addFilterBefore(jwtAuthenticationFilter, JwtUsernamePasswordAuthenticationFilter.class)              // ② 요청의 헤더에서 토큰 검사
                 .addFilterBefore(authenticationErrorFilter, JwtAuthenticationFilter.class);                           // ① 만료된 토큰 예외 처리
 
-
         http.httpBasic().disable() // 기본 HTTP 인증비활성화
                 .csrf().disable() // CSRF 비활성화
                 .formLogin().disable()  // formLogin 비활성화- 관련 필터 해제
@@ -124,7 +123,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         http
                 .authorizeRequests()
-                .antMatchers(HttpMethod.OPTIONS).permitAll()
+                .antMatchers(HttpMethod.POST, "/api/board/**").authenticated()
+                .antMatchers(HttpMethod.PUT, "/api/board/**").authenticated()
+                .antMatchers(HttpMethod.DELETE, "/api/board/**").authenticated()
+                .anyRequest().permitAll()
 
                 // 🌐 회원 관련 공개 API (인증 불필요)
                 .antMatchers(HttpMethod.GET, "/api/member/checkusername/**").permitAll()     // ID 중복 체크
@@ -193,4 +195,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .roles("MEMBER");  // ROLE_MEMBER*/
         // ROLE_MEMBER
     }
+
+
+
 }

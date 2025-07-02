@@ -27,4 +27,7 @@ public interface BoardMapper {
 
     public int deleteAttachment(Long no);
 
+    // 게시글 1개 + 첨부파일 리스트 함께 조회
+    BoardVO getWithAttachments(Long no);
+
 }
