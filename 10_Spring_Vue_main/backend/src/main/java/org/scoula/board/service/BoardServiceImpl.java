@@ -6,6 +6,8 @@ import org.scoula.board.domain.BoardAttachmentVO;
 import org.scoula.board.domain.BoardVO;
 import org.scoula.board.dto.BoardDTO;
 import org.scoula.board.mapper.BoardMapper;
+import org.scoula.common.pagination.Page;
+import org.scoula.common.pagination.PageRequest;
 import org.scoula.common.util.UploadFiles;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,8 +22,22 @@ import java.util.Optional;
 @Service
 @RequiredArgsConstructor
 public class BoardServiceImpl implements BoardService {
+    private final static String BASE_DIR = "/Users/yeon/Downloads/upload/board";
 
-    final private BoardMapper mapper;
+    private final BoardMapper mapper;
+
+    // 요청한 페이지별 게시판 목록과 전체 개수를 db에서 검색
+    // db로 변경하여 리턴
+    @Override
+    public Page<BoardDTO> getPage(PageRequest pageRequest) {
+
+        List<BoardVO> boards = mapper.getPage(pageRequest);
+        int totalCount = mapper.getTotalCount();
+
+        return Page.of(pageRequest, totalCount,
+                boards.stream().map(BoardDTO::of).toList());
+
+    }
 
     @Override
     public List<BoardDTO> getList() {
@@ -44,7 +60,7 @@ public class BoardServiceImpl implements BoardService {
     }
 
 
-    private final static String BASE_DIR = "/Users/yeon/Downloads/upload/board";
+//    private final static String BASE_DIR = "/Users/yeon/Downloads/upload/board";
 
     // 2개 이상의 insert 문이 실행될 수 있으므로 트랜잭션 처리 필요
     // RuntimeException인 경우만 자동 rollback.

@@ -1,3 +1,5 @@
+import { isAuthenticated } from "@/util/guards";
+
 // 게시판 라우팅
 
 export default [
@@ -20,6 +22,7 @@ export default [
     path: "/board/create",
     name: "board/create",
     component: () => import("../pages/board/BoardCreatePage.vue"),
+    beforeEnter: isAuthenticated,
   },
 
   // 게시글 수정
@@ -27,5 +30,6 @@ export default [
     path: "/board/update/:no", // 수정할 게시글 번호 전달
     name: "board/update",
     component: () => import("../pages/board/BoardUpdatePage.vue"),
+    beforeEnter: isAuthenticated,
   },
 ];

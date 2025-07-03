@@ -1,10 +1,12 @@
 <script setup>
 // Vue의 Composition API에서 사용하는 핵심 함수들을 임포트
-import { computed, reactive, ref } from 'vue';
+import { computed, reactive, ref } from "vue";
 // 인증 관련 상태를 관리하는 Pinia 스토어 가져오기
-import { useAuthStore } from '@/stores/auth';
+import { useAuthStore } from "@/stores/auth";
 // 라우팅 기능을 사용하기 위해 Vue Router의 useRouter 훅 가져오기
-import { useRouter } from 'vue-router';
+import { useRoute, useRouter } from "vue-router";
+
+const cr = useRoute();
 
 // router 인스턴스를 생성하여 페이지 이동 등에 사용
 const router = useRouter();
@@ -26,9 +28,16 @@ const disableSubmit = computed(() => !(member.username && member.password));
 
 const login = async () => {
   console.log(member);
+
   try {
     await auth.login(member); // 인증 스토어의 login 액션 호출
-    router.push("/"); // 성공 시 홈페이지로 이동
+
+    if (cr.query.next) {
+      router.push({ name: cr.query.next });
+    } else {
+      // 일반 로그인
+      router.push("/"); // 성공 시 홈페이지로 이동
+    }
   } catch (e) {
     console.log("에러=======", e);
     error.value = e.response.data; // 에러 메시지 표시

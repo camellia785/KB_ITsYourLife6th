@@ -1,12 +1,15 @@
 package org.scoula.board.mapper;
 
-import org.apache.ibatis.annotations.Select;
 import org.scoula.board.domain.BoardAttachmentVO;
 import org.scoula.board.domain.BoardVO;
+import org.scoula.common.pagination.PageRequest;
 
 import java.util.List;
 
 public interface BoardMapper {
+    int getTotalCount();
+    List<BoardVO> getPage(PageRequest pageRequest);
+
     // === 게시글 CRUD ===
     List<BoardVO> getList();                    // 게시글 목록 조회
     BoardVO get(Long no);                       // 게시글 상세 조회 (첨부파일 포함)
