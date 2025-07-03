@@ -30,7 +30,7 @@ public class BoardController {
 
     private final BoardService service; // 의존성 주입
 
-    @GetMapping("") // 전체개수, 요청한 페이지별 게시판 목록
+    @GetMapping("/page") // 전체개수, 요청한 페이지별 게시판 목록
     public ResponseEntity<Page> getList(PageRequest pageRequest) {
         return ResponseEntity.ok(service.getPage(pageRequest));
     }
